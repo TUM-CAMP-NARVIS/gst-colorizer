@@ -1,0 +1,26 @@
+= colorizer
+
+Colorizes depth-video, converting it to a RGB representation. This
+colorization is similar to that of the `realsense-viewer`.
+
+* *Git:* https://gitlab.com/aivero/public/gstreamer/gst-colorizer
+
+== Pads
+
+* *sink*, always, `video/x-raw,format=GRAY16_LE`
+* *src*, always, `video/x-raw,format=RGB`
+
+== Properties
+
+[cols=",,",options="header",]
+|=======================================================================
+|Property |Description |Values
+|far-cut |The far-cut of the colorization, i.e. the furthest distance we
+want to colorize. |0-65535
+
+|near-cut |The near-cut of the colorization, i.e. the nearest distance
+we want to colorize. |0-65535
+
+|preset |A preset to define the color scheme we wish to apply. (1) = jet
+|1
+|=======================================================================

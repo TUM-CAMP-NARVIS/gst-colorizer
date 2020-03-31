@@ -1,0 +1,5 @@
+name: gst-colorizer
+title: GStreamer Depth Colorizer
+version: 0.1.1
+nav:
+  - modules/ROOT/nav.adoc
